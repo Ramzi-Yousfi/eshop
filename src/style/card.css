@@ -1,6 +1,10 @@
 .card_detail{
-    background-color: rgb(139, 22, 22);
+    border : 1px solid rgb(35, 34, 34);
+    border-radius: 5px;
+    padding: 30px,0 ,0,-45px !important;
 }
 .card_price{
-    background-color: rgb(227, 238, 8);
+    background-color: rgb(230, 184, 36);
+    width: auto;
+    height: 30vh !important;
 }

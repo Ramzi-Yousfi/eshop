@@ -4,8 +4,10 @@ import StoreIcon from '@mui/icons-material/Store';
 import SearchIcon from '@mui/icons-material/Search';
 import "../style/header.css"
 import { Link } from 'react-router-dom'
+import { useStateValue } from '../provider/StateProvider'
 
 function Header() {
+  const [{cards}, dispatch] = useStateValue();
   return (
     <div className='header'>
       <Link to='/' style={{ textDecoration: 'none' }}>
@@ -22,14 +24,16 @@ function Header() {
       <div className="header_nav">
         <div className="nav_item">
         <span className="nav__item_gest">Hello Ramzi</span>
+        <Link to='/login' className="nav__item_link">
         <span className="nav__item_sign">Sign in </span>
+        </Link>
         </div>   
        
         <div className="nav_item_basket">
        <Link to="/card " style={{ textDecoration: 'none',color: 'white' }}>
                  <ShoppingBasketIcon />
           </Link>
-        <span className="nav__basket_count ">0 </span>
+        <span className="nav__basket_count ">{cards.length}</span>
         </div>
  
       </div>
