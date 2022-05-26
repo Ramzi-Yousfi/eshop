@@ -8,10 +8,12 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <div className='header'>
+      <Link to='/' style={{ textDecoration: 'none' }}>
     <div className="header_logo">
       <StoreIcon className="header_logo_img" />
       <h3 className="header_logo_title">e.shop</h3>
       </div>
+      </Link>
       <div className="header_search">
       <input type="text" className="header_search_input" placeholder="Search..." >
       </input>

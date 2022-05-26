@@ -5,7 +5,7 @@ function Home() {
   return (
     <> 
         <div className="container home-container">
-              <div className="spacer"></div>
+           
             <div className="row">
                 <div className="col-6  " >
                   <Product 
